@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            PixelButton(action: {
+                print("PRESS")
+            }) {
+                PixelText("Hello, world!")
+                    .font(Font.custom("Pixel-Regular", size: 24))
+                    .foregroundColor(.white)
+            }
         }
         .padding()
     }
