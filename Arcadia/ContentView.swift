@@ -14,7 +14,6 @@ struct ContentView: View {
                 print("PRESS")
             }) {
                 PixelText("Hello, world!")
-                    .font(Font.custom("Pixel-Regular", size: 24))
                     .foregroundColor(.white)
             }
         }
